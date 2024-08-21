@@ -7,6 +7,7 @@
   <title>Grupo Dragon</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/nosotros.css">
+  <link rel="stylesheet" href="css/popup.css">
   <link rel="stylesheet" href="css/gestion.css">
   <link rel="stylesheet" href="css/infraestructura.css">
   <link rel="stylesheet" href="css/form.css">
@@ -18,23 +19,29 @@
 <body>
   <div class="menu__wrapper" id="top">
     <div class="menu__bar">
-      <a href="#" title="Logo" class="logo">
+      <a href="#inicio" title="Logo" class="logo">
         <img src="images/Logo/Grupo Dragon_ Logo Blanco.png" alt="Logo" class="logo-img2" id="logo-img">
       </a>
       <img class="menu-icon" src="images/burger-menu.svg" title='Burger Menu' alt='Burger Menu'
         onclick="toggleMenu(this)">
       <ul class="navigation">
-        <li><a href="#top" title="Services">Inicio</a></li>
-        <li><a href="#cambios" title="About">Servicios</a></li>
-        <li><a href="#preguntas" title="Contact Us">Sobre Nosotros</a></li>
-        <li><a href="formulariowsp.html" title="Contact Us">Contacto</a></li>
-
-
+        <li><a href="#inicio" title="Inicio">Inicio</a></li>
+        <li><a href="#sobre-nosotros" title="Sobre Nosotros">Sobre Nosotros</a></li>
+        <li><a href="#servicios" title="Servicios">Servicios</a></li>
+        <li><a href="#contacto" title="Contacto">Contacto</a></li>
       </ul>
     </div>
   </div>
-
-
+  <script>
+    document.querySelectorAll('.navigation a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 
   <style>
     #logo-img {
@@ -42,7 +49,7 @@
     }
   </style>
 
-  <div class="main-banner">
+  <div class="main-banner" id="inicio">
     <div class="container">
       <div class="row">
         <div>
@@ -59,7 +66,7 @@
     </div>
   </div>
 
-  <section class="testimony1" id="comentarios">
+  <section class="testimony1">
     <div class="slider2">
 
       <div class="slide2-track">
@@ -133,7 +140,7 @@
     </div>
   </section>
 
-  <section class="about-section">
+  <section class="about-section" id="sobre-nosotros">
     <div class="about-content">
       <h4>Sobre Nosotros</h4>
       <h1>Grupo Dragón</h1>
@@ -143,25 +150,163 @@
       </p>
 
       <div class="image-gallery">
-        <div class="gallery-item">
+        <div class="gallery-item" data-id="1">
           <img src="images/nosotros/Botonera_ Sobre nosotros/Web Grupo Dragon desktop_ Botonera 1.png"
-            alt="Grenergy Logo">
+            alt="Grenergy Logo 1">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-id="2">
           <img src="images/nosotros/Botonera_ Sobre nosotros/Web Grupo Dragon desktop_ Botonera 2.png"
-            alt="Grenergy Logo">
+            alt="Grenergy Logo 2">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-id="3">
           <img src="images/nosotros/Botonera_ Sobre nosotros/Web Grupo Dragon desktop_ Botonera 3.png"
-            alt="Grenergy Logo">
+            alt="Grenergy Logo 3">
         </div>
-        <div class="gallery-item">
+        <div class="gallery-item" data-id="4">
           <img src="images/nosotros/Botonera_ Sobre nosotros/Web Grupo Dragon desktop_ Botonera v1.png"
-            alt="Grenergy Logo">
+            alt="Grenergy Logo 4">
         </div>
       </div>
     </div>
   </section>
+<!-- Popup 1 -->
+<!-- Popup 1 -->
+<div id="popup-1" class="popup">
+  <div class="popup-content">
+      <span class="popup-close" data-id="1">&times;</span>
+      <div class="popup-left">
+          <img src="images/clients/logos empresas_Grupo Dragon_ypf.png" alt="Logo Empresa 1" class="popup-logo">
+      </div>
+      <div class="popup-right">
+          
+          <p>- O&M Sistemas de distribución de energía eléctrica en MT <br>
+            - Tratamiento de aguas para reuso e inyección de polímeros<br>
+            - Energía alternativa<br>
+            - Alquiler de vehículos de transporte de personal<br>
+            </p>
+      </div>
+      
+      <!-- Sección Informativa (Ahora fuera de .popup-right) -->
+      <div class="popup-info">
+          <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Hipólito Yrigoyen 4485. Comodoro Rivadavia, Chubut.</span>
+          </div>
+          <div class="info-item">
+              <i class="fas fa-phone-alt"></i>
+              <span>+54 (0297) 448 4679</span>
+          </div>
+          <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <span>grupodragon@grupodragon.net</span>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Repetir para Popup 2, 3 y 4, cambiando los datos si es necesario -->
+<!-- Popup 2 -->
+<div id="popup-2" class="popup">
+  <div class="popup-content">
+      <span class="popup-close" data-id="2">&times;</span>
+      <div class="popup-left">
+          <img src="images/clients/logos empresas_Grupo Dragon_Camuzzi.png" alt="Logo Empresa 2" class="popup-logo">
+      </div>
+      <div class="popup-right">
+          
+          <p>- Obras llave en mano para la industria del Oil & Gas, Plantas, baterías, PIAS. Oleoductos, gasoductos, acueductos <br>
+            - Construcción y Reparación de Tanques de almacenamiento<br>
+            - Construcción y reparación de calentadores indirectos de petróleo<br>
+            - Venta de combustibles y lubricantes<br>
+            - Transporte de combustibles<br>
+            </p>
+          
+          <!-- Sección Informativa -->
+          <div class="popup-info">
+              <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Hipólito Yrigoyen 4485. Comodoro Rivadavia, Chubut.</span>
+              </div>
+              <div class="info-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+54 (0297) 448 4679</span>
+              </div>
+              <div class="info-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>grupodragon@grupodragon.net</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Repetir para Popup 3 y 4 -->
+<!-- Popup 3 -->
+<div id="popup-3" class="popup">
+  <div class="popup-content">
+      <span class="popup-close" data-id="3">&times;</span>
+      <div class="popup-left">
+          <img src="images/clients/logos empresas_Grupo Dragon_PAE.png" alt="Logo Empresa 3" class="popup-logo">
+      </div>
+      <div class="popup-right">
+          
+          <p>- O&M de yacimientos <br>
+            - Obras de infraestructura eléctrica. Estaciones transformadoras. Líneas eléctricas de MT y AT<br>
+            - Electrificación de yacimientos<br>
+            - Montaje electromecánico<br>
+            - BOP parques eólicos<br>
+            - Instalación de paneles fotovoltaicos<br>
+            </p>
+          
+          <!-- Sección Informativa -->
+          <div class="popup-info">
+              <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Hipólito Yrigoyen 4485. Comodoro Rivadavia, Chubut.</span>
+              </div>
+              <div class="info-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+54 (0297) 448 4679</span>
+              </div>
+              <div class="info-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>grupodragon@grupodragon.net</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Popup 4 -->
+<div id="popup-4" class="popup">
+  <div class="popup-content">
+      <span class="popup-close" data-id="4">&times;</span>
+      <div class="popup-left">
+          <img src="images/clients/logos empresas_Grupo Dragon_Tecpetrol.png" alt="Logo Empresa 4" class="popup-logo">
+      </div>
+      <div class="popup-right">
+          <h2></h2>
+          <p>- Servicio de apoyo logístico y administrativo</p>
+          
+          <!-- Sección Informativa -->
+          <div class="popup-info">
+              <div class="info-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <span>Hipólito Yrigoyen 4485. Comodoro Rivadavia, Chubut.</span>
+              </div>
+              <div class="info-item">
+                  <i class="fas fa-phone-alt"></i>
+                  <span>+54 (0297) 448 4679</span>
+              </div>
+              <div class="info-item">
+                  <i class="fas fa-envelope"></i>
+                  <span>grupodragon@grupodragon.net</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
 
   <section class="team-section">
     <div class="team-content">
@@ -188,7 +333,7 @@
     </div>
   </section>
 
-  <section class="management-system">
+  <section class="management-system" id="servicios">
     <div class="left-content">
       <div class="text-content">
         <h1>Sistema de gestión</h1>
@@ -352,15 +497,19 @@
 
 
     </div>
-    <div class="form-container">
+    <div class="form-container" id="contacto">
       <div class="form-background">
         <h4>Contacto</h4>
         <h1>Formulario</h1>
-        <form>
+        <form action="mail.php" method="post">
           <input type="text" name="name" placeholder="Nombre" required>
           <input type="email" name="email" placeholder="E-mail" required>
           <input type="tel" name="phone" placeholder="Teléfono" required>
           <textarea name="message" placeholder="Mensaje" required></textarea>
+           <!-- Google reCAPTCHA -->
+           <div class="captcha-container">
+            <div class="g-recaptcha" data-sitekey="6LeMnysqAAAAAMeH6wW5oSHTg5OZR0ns191HT6MC"></div>
+        </div>
           <button type="submit">Enviar</button>
         </form>
       </div>
@@ -368,71 +517,82 @@
   </section>
   <section class="contact-info">
     <div class="contact-title">
-        <h2>Se parte de nuestro equipo</h2>
+      <h2>Se parte de nuestro equipo</h2>
     </div>
     <div class="contact-details">
-        <div class="contact-item">
-            <i class="fas fa-map-marker-alt"></i>
-            <div>
-                Encontranos en:<br>
-                <strong>Hipólito Yrigoyen 4485.<br>
-                Comodoro Rivadavia, Chubut.</strong>
-            </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <div>
+          Encontranos en:<br>
+          <strong>Hipólito Yrigoyen 4485.<br>
+            Comodoro Rivadavia, Chubut.</strong>
         </div>
-        <div class="contact-item">
-            <i class="fas fa-phone-alt"></i>
-            <div>
-                Llamanos al:<br>
-                <strong>+54 (0297) 448 4679<br>
-                +54 (0297) 448 5499</strong>
-            </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone-alt"></i>
+        <div>
+          Llamanos al:<br>
+          <strong>+54 (0297) 448 4679<br>
+            +54 (0297) 448 5499</strong>
         </div>
-        <div class="contact-item">
-            <i class="fas fa-envelope"></i>
-            <div>
-                Envíanos un correo al:</strong><br>
-                <strong> grupodragon@grupodragon.net<br>
-                rrhh@grupodragon.net</strong>
-            </div>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <div>
+          Envíanos un correo al:</strong><br>
+          <strong> grupodragon@grupodragon.net<br>
+            rrhh@grupodragon.net</strong>
         </div>
+      </div>
     </div>
-</section>
+  </section>
 
 
 
-<!-- División con sombra -->
-<div class="divider"></div>
+  <!-- División con sombra -->
+  <div class="divider"></div>
 
-<!-- Footer -->
+  <!-- Footer -->
 
-<!-- Footer -->
-<footer>
-  <div class="footer-left">
+  <!-- Footer -->
+  <footer>
+    <div class="footer-left">
       <img src="images/Logo/Grupo Dragon_ Logo Blanco.png" alt="Grupo Dragón Logo">
-  </div>
-  <div class="footer-right">
-    
+    </div>
+    <div class="footer-right">
+
       <a href="#">
-          <img src="images/Footer/Grupo Dragon_ icono_ Face.png" alt="Facebook" class="social-icon">
+        <img src="images/Footer/Grupo Dragon_ icono_ Face.png" alt="Facebook" class="social-icon">
       </a>
       <a href="#">
-          <img src="images/Footer/Grupo Dragon_ icono_ Insta.png" alt="Instagram" class="social-icon">
+        <img src="images/Footer/Grupo Dragon_ icono_ Insta.png" alt="Instagram" class="social-icon">
       </a>
       <a href="#">
-          <img src="images/Footer/Grupo Dragon_ icono_ Tik Tok.png" alt="TikTok" class="social-icon">
+        <img src="images/Footer/Grupo Dragon_ icono_ Tik Tok.png" alt="TikTok" class="social-icon">
       </a>
       <p>Copyright © 2024 Grupo Dragón</p>
-  </div>
-  
-</footer>
+    </div>
 
+  </footer>
 
+  <style>
+    /* Estilos personalizados para centrar el reCAPTCHA */
+    .g-recaptcha {
+        display: inline-block; /* Asegura que el recaptcha se trate como un elemento en línea */
+    }
 
+    .captcha-container {
+        text-align: center; /* Centra el contenido del contenedor */
+        margin: 20px 0; /* Añade margen superior e inferior para separación */
+    }
+</style>
 
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script src="java/script.js"></script>
   <script src="java/nav.js"></script>
   <script src="java/scrolnav.js"></script>
   <script src="java/logo.js"></script>
+  <script src="java/popup.js"></script>
 </body>
 
 </html>

@@ -147,6 +147,12 @@
     gap: 15px;
     
 }
+
+.stat-item {
+  
+     flex: 1 1 40%; /* Ajuste predeterminado para pantallas más grandes */
+   
+}
 .stat-item h2 {
     font-size: 1.5rem;
   

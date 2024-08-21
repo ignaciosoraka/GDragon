@@ -399,7 +399,7 @@ Banner Style
   /* Alinea los elementos hacia la izquierda */
   justify-content: center;
   /* Centra los elementos en el eje vertical */
-  padding-left: 30%;
+  padding-left: 20%;
   /* Añade espacio desde el borde izquierdo */
   text-align: left;
   /* Alinea el texto a la izquierda */
@@ -408,19 +408,21 @@ Banner Style
 .header-text h1 {
   font-family: 'OpenSans-Bold';
   color: white;
-  font-size: 4rem;
+  font-size: 5rem;
   /* Tamaño del título */
   font-weight: bold;
 
 }
 
 .header-text p {
+
   font-family: 'OpenSans-Bold';
   color: white;
-  font-size: 1.32rem;
+  font-size: 1.65rem;
   /* Tamaño del subtítulo */
-  margin-left: 7px;
+  margin-left: 10px;
   margin-bottom: 2rem;
+  
 }
 
 .btn-contact {
@@ -522,7 +524,7 @@ Banner Style
 
 
 .main-banner p {
-  margin-top: 5px;
+  margin-top: -40px;
 }
 
 
@@ -688,10 +690,12 @@ Banner Style
   
 
   .header-text h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-bottom: 3px;
   }
 
   .main-banner p {
+    font-size: 0.6rem;
     margin-top: 3px;
   }
 
@@ -699,7 +703,7 @@ Banner Style
     width: 100%;
     margin: 0 auto;
     text-align: left;
-    padding: 0 10%;
+    padding: 0 5%;
   }
 
   .main-banner .buttons {
