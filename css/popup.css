@@ -19,7 +19,7 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    max-width: 800px;
+    max-width:1000px;
     padding: 40px 60px;
     display: flex;
     flex-direction: column; /* Permite apilar contenido verticalmente */
@@ -58,6 +58,7 @@
 }
 
 .popup-right p {
+    font-family: 'OpenSans-Regular';
     font-size: 1.2rem;
     line-height: 1.5;
     margin-bottom: 20px;
@@ -117,6 +118,29 @@
     cursor: pointer;
     background: none;
     border: none;
+}
+
+
+.contact2-item {
+    display: flex;
+    align-items: center;
+    /* Alinea los íconos y el texto verticalmente en el centro */
+    text-align: left;
+    font-size: 1rem;
+    color: #fffefe;
+    /* Color del texto para asegurar legibilidad */
+    max-width: 300px;
+}
+
+.contact2-item i {
+    font-size: 2rem;
+    color: #fffefe;
+    margin-right: 15px;
+    /* Espacio entre el ícono y el texto */
+}
+
+.contact2-item div {
+    line-height: 1.5;
 }
 
 /* Ajustes para la versión móvil */

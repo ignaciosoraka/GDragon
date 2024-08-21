@@ -68,8 +68,9 @@
 
 /* Sección Nuestro Equipo */
 .team-section {
-    padding: 60px 0;
-    background-image: url('../images/Assets/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_Fondo.jpg'); /* Imagen de fondo */
+   
+    padding: 80px 0 40px 0px;
+    background-image: url('../images/Assets/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_\ Nuestro\ equipo_Fondo.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -162,7 +163,12 @@
 .stat-item p{
     font-size: 1rem;
 }
+
+
 .team-section{
+    background-image: url('../images/Assets/nosotros/Grupo\ Dragon_\ Nuestro\ equipo_395\ x\ 600.jpg'); /* Imagen de fondo */
+    background-size: cover;
+    background-position: center;
     padding: 40px;
 }
 .team-content h1{

@@ -428,16 +428,15 @@ Banner Style
 .btn-contact {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #ed2e38;
-  /* Color rojo del botón */
-  color: #333333;
-  /* Color del texto del botón */
-  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+  background-color: transparent; /* Fondo transparente */
+  color: #ffffff; /* Color del texto en blanco */
+  border: 2px solid #ffffff; /* Borde blanco */
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3); /* Sombra */
   font-size: 1rem;
   margin-left: 10px;
   font-weight: 750;
   text-decoration: none;
-  transition: background-color 0.3s ease;
+  transition: all 0.1s ease; /* Suave transición en todos los cambios */
 }
 
 .btn-contact .arrow {
@@ -447,8 +446,11 @@ Banner Style
 }
 
 .btn-contact:hover {
-  background-color: #cc0000;
-  /* Un rojo más oscuro al pasar el cursor */
+  background-color: #ed2e38;
+  /* Color rojo del botón */
+  color: #333333;
+  /* Color del texto del botón */
+  border: none;
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
 }
 
