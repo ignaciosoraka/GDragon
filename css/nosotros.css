@@ -69,7 +69,7 @@
 /* Sección Nuestro Equipo */
 .team-section {
     padding: 60px 0;
-    background-image: url('../images/nosotros/Grupo\ Dragon_\ Empresas\ vinculadas_\ Fondo.jpg'); /* Imagen de fondo */
+    background-image: url('../images/Assets/nosotros/Grupo\ Dragon_\ Sobre\ nosotros_Fondo.jpg'); /* Imagen de fondo */
     background-size: cover;
     background-position: center;
     color: #fff;
@@ -113,6 +113,7 @@
 .stat-item h2 {
     font-size: 5rem;
     margin-bottom: 10px;
+    -webkit-text-stroke: 1px #ffffff;  
     color: #ffffff; /* Rojo para los números */
 }
 

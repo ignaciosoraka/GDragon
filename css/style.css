@@ -428,7 +428,7 @@ Banner Style
 .btn-contact {
   display: inline-block;
   padding: 10px 15px;
-  background-color: #f40303;
+  background-color: #ed2e38;
   /* Color rojo del botón */
   color: #333333;
   /* Color del texto del botón */
@@ -576,7 +576,7 @@ Banner Style
   CLIENTS              
 -----------------------------------------*/
 .testimony1 {
-  background-image: url('../images/Header/Grupo\ Dragon_\ Header\ Marcas\ que\ acompañan.jpg');
+  background-image: url('../images/Assets/Header/Grupo\ Dragon_\ Header\ Marcas\ que\ acompañan.jpg');
   /* Ruta a la imagen de fondo */
   background-size: cover;
   /* Asegura que la imagen cubra todo el div */

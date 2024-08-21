@@ -1,7 +1,7 @@
 /* Sección de Información de Contacto */
 .contact-info {
     padding: 60px 20px 80px 20px;
-    background-image: url('../images/fondo-contacto.jpg');
+    background-image: url('../images/Assets/mapa/Grupo\ Dragon_Contacto_\ Fondo.jpg');
     /* Ruta a la imagen de fondo */
     background-size: cover;
     background-position: center;
@@ -58,7 +58,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 40px 100px;
-    background-image: url('../images/Footer/Grupo\ Dragon_\ Footer.jpg');
+    background-image: url('../images/Assets/Footer/Grupo\ Dragon_Footer_\ Fondo.jpg');
     /* Ruta a la imagen de fondo */
     background-size: cover;
     background-position: center;
@@ -102,18 +102,16 @@ footer {
     /* Cambia el color al pasar el mouse */
 }
 
-/* Estilo para el texto del copyright */
-.footer-bottom {
-    text-align: center;
-    margin-top: 20px;
-    /* Aumenta el espacio para que quede debajo del footer */
+
+
+.footer-right a:hover .social-icon {
+    fill: #e74c3c; /* Cambia el color del ícono a rojo */
 }
 
-.footer-bottom p {
-    font-size: 0.9rem;
-    color: #555;
+/* Si el SVG no permite cambiar el fill directamente, puedes usar este truco: */
+.footer-right a:hover img {
+    filter: invert(29%) sepia(100%) saturate(7491%) hue-rotate(357deg) brightness(95%) contrast(116%);
 }
-
 /* ---------------- */
 /* Estilos Responsivos */
 /* ---------------- */
@@ -123,6 +121,7 @@ footer {
     .contact-info {
        
         padding: 40px 20px;
+        padding-top: 200px;
     }
 
     .contact-title h2 {

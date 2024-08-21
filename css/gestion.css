@@ -11,14 +11,14 @@
 }
 
 .left-content {
-    background-image: url('../images/sistemas/Grupo\ Dragon_\ Sistema\ de\ gestion_\ Fondo.jpg'); /* Imagen de fondo izquierda */
+    background-image: url('../images/Assets/sistema/Grupo\ Dragon_\ Sistema\ de\ gestion_\ Fondo.jpg'); /* Imagen de fondo izquierda */
     background-size: cover;
     background-position: center;
     padding: 140px 80px;
 }
 
 .right-content {
-    background-image: url('../images/sistemas/Grupo\ Dragon_\ Obras\ y\ servicios_\ Fondo.jpg'); /* Imagen de fondo derecha */
+    background-image: url('../images/Assets/sistema/Grupo\ Dragon_\ Obras\ y\ servicios_\ Fondo.jpg'); /* Imagen de fondo derecha */
     background-size: cover;
     background-position: center;
     padding: 60px 160px;
@@ -35,6 +35,7 @@
     font-family: 'OpenSans-Bold';
     font-size: 2.5rem;
     color: #333; /* Color oscuro del texto */
+    -webkit-text-stroke: 1px #333;
     margin-bottom: 20px;
 }
 
