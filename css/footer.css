@@ -70,13 +70,18 @@ footer {
     /* Sombra hacia arriba */
 }
 
+.footer-center {
+    text-align: center;
+}
+
 .footer-left img {
     max-height: 30px;
 }
 .footer-right p{
+  
     font-size: 0.8rem;
     text-align: center;
-    margin-left: 10%;
+   
 }
 
 
@@ -92,6 +97,7 @@ footer {
 }
 
 .social-icon {
+    
     width: 54px;
     /* Ajusta el tamaño según sea necesario */
     height: 54px;
