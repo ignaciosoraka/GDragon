@@ -369,7 +369,7 @@ Banner Style
 
 .main-banner {
 
-  background-image: url('../images/Grupo\ Dragon_\ Header\ fondo.jpg');
+  background-image: url('../images/Header/Grupo\ Dragon_\ Header\ fondo\ \(1\).jpg');
   /* Reemplaza con la URL de tu imagen */
   background-size: cover;
   /* Asegura que la imagen cubra todo el div */
@@ -386,6 +386,15 @@ Banner Style
   /* Añade espacio arriba y abajo */
 }
 
+
+@media (max-width:450px)
+{
+  .main-banner {
+
+    background-image: url('../images/Header/Grupo\ Dragon_\ Header\ fondo\ 450x1000.jpg');
+    
+  }
+}
 .logo img {
   max-height: 40px;
 }
